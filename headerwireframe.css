@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.5;
+    background-image: url(./img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+:root{
+    --white: #ffffff;
+
+}
+nav{
+    width: 30%;
+}
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    margin-left: 30px;
+    align-self: flex-end;
+    color: var(--white);
+    font-size: 32px;
+
+}
+.navBar{
+    display: flex;
+    list-style-type: none;
+    margin: 40px 90px 0px 0px;
+    padding: 0 5px;
+    justify-content: space-evenly;
+    
+}
+li a:link { text-decoration: none; }
+
+li a:visited { text-decoration: none; }
+
+li a:hover { 
+    text-decoration: none;
+    background-color: var(--white);
+    color: black;
+}
+
+li a:active { text-decoration: none; }
+
+li{
+    float: left;
+    padding: 0 40px 0 5px;
+}
+
+li a{
+    border-radius: 5px;
+    color: var(--white);
+    display: block;
+}
+.dropdown{
+
+}
+.dropDownContent{
+    display: none;
+}
+.dropDownContent a{
+    color: var(--white);
+    background-color: black;
+}
+.dropDownContent a:hover{
+    background-color: var(--white);
+    color: black;
+
+}
+.dropdown:hover .dropDownContent{
+    display: block;
+}
+section{
+    height: 200px;
+    margin: 200px 300px 0;
+    text-align: center;
+}
+.labelList{
+    width: 100px;
+    height: 30px;
+    margin: 330px auto 100px;
+}
+.mainHeader{
+    font-size: 40px;
+}
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    color: var(--white);
+}
+.containerMain a{
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    padding: 7px;
+}
+div .containerMain{
+    text-align: center;
+}
+.mainHeader{
+
+}
+.containerFooter{
+    display: flex;
+    justify-content: flex-end;
+}
+.labelList{
+    color: var(--white);
+}

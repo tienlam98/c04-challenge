@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.5;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.divleft{
+    width: 300px;
+}
+.divright{
+    width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.item{
+    margin: 0 2%;
+    width: 40%;
+    box-shadow: 7px 7px 10px 0 rgb(76 110 245 / 10%);
+    border: 1px solid white;
+    border: 10px;
+}
+h2{
+    text-align: center;
+}
+span{
+    width: 200px;
+}
+i{
+    color: tomato;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 20px;
+
+}
+p{
+    text-align: center;
+}
+#icon{
+    margin: 0 30%;
+}
