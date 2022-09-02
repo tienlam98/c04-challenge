@@ -14,7 +14,7 @@ body {
 
 }
 nav{
-    width: 30%;
+    padding-right: 10px;
 }
 .containerHeader{
     display: flex;
@@ -31,7 +31,7 @@ nav{
     display: flex;
     list-style-type: none;
     margin: 40px 90px 0px 0px;
-    padding: 0 5px;
+    padding: 3px;
     justify-content: space-evenly;
     
 }
@@ -57,9 +57,6 @@ li a{
     color: var(--white);
     display: block;
 }
-.dropdown{
-
-}
 .dropDownContent{
     display: none;
 }
@@ -76,8 +73,7 @@ li a{
     display: block;
 }
 section{
-    height: 200px;
-    margin: 200px 300px 0;
+    margin: 70px 300px 0;
     text-align: center;
 }
 .labelList{
@@ -95,6 +91,11 @@ section{
     align-items: center;
     padding: 0;
     color: var(--white);
+    margin-top: 10rem;
+}
+.containerMain p{
+    text-align: center;
+    width: 50%;
 }
 .containerMain a{
     border: 2px solid var(--white);
@@ -106,9 +107,6 @@ section{
 div .containerMain{
     text-align: center;
 }
-.mainHeader{
-
-}
 .containerFooter{
     display: flex;
     justify-content: flex-end;
@@ -116,3 +114,60 @@ div .containerMain{
 .labelList{
     color: var(--white);
 }
+#dot{
+    margin-top: 10rem;
+    text-align: center;
+}
+.dotItem{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;;
+}
+@media only screen and (max-width: 992px){
+    nav label{
+            display: block;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    .navBar {
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        margin: 0;
+        top: 7rem;
+        
+    }
+    input{
+        display: none;
+    }
+    nav>ul>li{
+        background-color: rgba(0, 0, 0, 0.78);
+    }
+    .dropDownContent{
+        display: none;
+        
+    }
+    #toggle2:checked + .dropDownContent{
+        display: none;
+    }
+    #toggle3{
+        padding: 0;
+        border-radius: 5px;
+    }
+    #desktopToggle{
+        display: none;
+    }
+
+
+    }

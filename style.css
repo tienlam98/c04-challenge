@@ -18,7 +18,18 @@ h2{
     width: auto;
     height: 5vh;
     margin: 0 auto;
+    animation: shrink 5s;
 }
+@keyframes shrink {
+    from {
+        letter-spacing: 20px;
+    }
+    to {
+        letter-spacing: 1px;
+
+    }
+}
+
 p{
     height: 5vh;
     width: 50rem;
@@ -29,3 +40,21 @@ img{
     display: block;
     margin: 0;
 }
+
+
+
+
+/* code animation----------
+suy nghĩ cách dùng animation hay transition
+welcome là thẻ container của mình */
+#welcome {
+    animation: fade-in 5s ease-in-out;
+}
+@keyframes fade-in;
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+
